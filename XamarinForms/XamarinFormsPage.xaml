@@ -8,6 +8,20 @@
     <StackLayout
         Padding = "20"
         Spacing = "20">
+
+        <OnPlatform x:TypeArguments="View">
+
+            <OnPlatform.Android>
+                <Label
+                    Text = "Android version" />
+            </OnPlatform.Android>
+
+            <OnPlatform.iOS>
+                <Label
+                    Text = "iOS version" />
+            </OnPlatform.iOS>
+            
+        </OnPlatform>
         
         <Entry
             TextColor = "#3498DB"
